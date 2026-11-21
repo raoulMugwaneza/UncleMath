@@ -1,0 +1,121 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #45b7a5;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 40px 20px 15px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.9;
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-weight: bold;
+}
+
+#uncle {
+    color: #ffe0a3;
+    transform: rotate(-18deg) translateX(-45px);
+    font-size: 1.2em;
+    margin-bottom: -15px;
+    z-index: 1;
+}
+
+#math {
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    margin-top: 0;
+}
+
+/* Main game */
+main {
+    width: 100%;
+    max-width: 500px;
+    background: #fff8e7;
+    padding: 35px 20px;
+    border-radius: 25px;
+    box-shadow: 0 8px 0 #278b7d;
+}
+
+/* Question */
+#question {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 35px;
+}
+
+/* Answer area */
+#response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 250px;
+    height: 60px;
+    resize: none;
+    border: 3px solid #45b7a5;
+    border-radius: 15px;
+    background: white;
+    font-size: 1.8rem;
+    text-align: center;
+    outline: none;
+}
+
+button {
+    background: #ffb347;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #dc8b27;
+}
+
+button:hover {
+    background: #ffa52e;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #dc8b27;
+}
+
+/* Score */
+#score {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #34495e;
+}
+
+#score span {
+    color: #e87945;
+}
+
+/* Footer */
+footer {
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+}
