@@ -13,15 +13,15 @@
     <div id="math">Math</div>
 </header>
 <main> 
-    <div id="question"><span>Num </span><span> plus </span> <span> num </span> makes ? </div>
+    <div id="question"><span id="firstNum">Num </span> <span id="operationSign"> plus </span> <span id="secondNum"> num </span> makes ? </div>
     <div id="response">
         
-    <textarea> </textarea>
-    <button>Verify</button>
+    <textarea id="answer"> </textarea>
+    <button id="verify" onclick="verification()">Verify</button>
 
     </div>
     
-    <div id="score">Score <span>1</span></div>
+    <div id="score">Score <span id="scoreID">1</span></div>
 </main>
 <footer> 
     <div>Developped and mantained by &copy;</div>
