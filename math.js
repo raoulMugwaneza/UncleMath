@@ -50,3 +50,22 @@ else { score--;
     document.getElementById('scoreID').innerText = score;
 }
 }
+
+// a closure version of this would be
+
+function verifClos(){
+
+    let score = 0; 
+let firstNum = Math.floor(Math.random()*100);
+let operationSign = ['+', '-','/', '*'];
+let selectedOp = operationSign[Math.floor(Math.random()*4)];
+let secondNum = Math.floor(Math.random()*100); 
+
+// all functions under here
+
+}
+
+/*
+call the required functions using 
+veriClos.func
+*/
